@@ -1,0 +1,909 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,300;1,500&display=swap");
+
+:root {
+  --Color-negro: rgb(26, 26, 26);
+  --color-hover: rgb(73, 73, 73);
+  --color-morado:  rgb(130, 70, 189);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--Color-negro);
+}
+.navegacion{
+  position: fixed;
+  background-color: var(--Color-negro);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translate(0,-100%);
+}
+nav ul{
+  
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  padding: auto;
+  
+  
+  
+}
+nav ul li{
+  margin:  28px 0;
+  padding: 15px;
+  width: 250px;
+  border-radius: 7px;
+  background-color: var(--color-morado);
+  margin: 15px 0;
+ 
+  list-style: none;
+  text-align: center;
+  
+}
+/*mover el  cerrar*/
+.cerrar{
+  position: fixed;
+  right: 20px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+}
+/*activar navegacion active*/
+.navegacion-active{
+  transform: translate(0,0%);
+  z-index: 999;
+}
+/*colocar el menu acoplado*/
+.menu-acoplado{
+  background-color: var(--Color-negro);
+}
+.menu-acoplado img{
+  width: 60px;
+  height: 60px;
+  margin-left: 25px;
+}
+/*logo letra*/
+.logo-letra{
+  display: none;
+  color: var(--color-morado);
+
+}
+
+/*portada*/
+.portada{
+  position: relative;
+  
+  background-color: var(--Color-negro);
+  background-size: 100%;
+  height: 750px;
+ 
+ 
+  
+}
+
+ 
+
+.contenido_portada{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-image: url(../Img/portadaoficial.jpg);
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(10%);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.contenido_portada h1{
+  font-size: 1.7rem;
+  margin: 15px;
+}
+.contenido_portada h2{
+  font-size: 1.2rem;
+  margin: 5px;
+}
+.contenido_portada a{
+  font-size: 1rem;
+  margin: 15px;
+  padding: 10px;
+  width: 200px;
+  background-color:var(--color-morado);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0px 0px 20px 0px black;
+}
+/*media para la imagen*/
+@media only screen and (max-width: 770px){
+  .contenido_portada{
+    background-image: url(../Img/portadaoficial2.jpg);
+  }
+}
+/*contenido seccion 1*/
+.contenido{
+  background-color: var(--Color-negro);
+}.contenedor-quiensoy{
+  height: auto;
+  background-color: var(--Color-negro);
+  padding-bottom: auto;
+}
+.quiensoy-caja{
+  background-color: var(--Color-negro);
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 5px;
+  height: auto;
+}
+.titulo-quiensoy{
+  
+  color:  var(--color-morado);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 30px 0;
+}
+.img-quiensoy{
+ 
+  width: 35%;
+  height: 35%;
+  margin: auto;
+  border-radius: 50%;
+  
+  
+  
+}
+.img-quiensoy img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px 0px black;
+}
+.descripcion{
+  box-shadow: 0px 0px 20px 0px black;
+  margin: 0 25px;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+.descripcion p{
+  
+ 
+}
+/*conocimientos*/
+
+/*imagenes conocimientos*/
+.conocimientos-caja{
+  height: auto;
+  background-color: var(--Color-negro);
+}
+.conocimientos-caja h3{
+  text-align: center;
+  color: var(--color-morado);
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 29px 0;
+  background-color: var(--Color-negro);
+ 
+}
+.contenedor-Conocimientos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--Color-negro);
+  
+  padding-bottom: 50px;
+  height: 100%;
+ 
+}
+.contenedor-Conocimientos img{
+  width: 155px;
+  height: 155px;
+  padding: 2px;
+ 
+  box-shadow: 0px 0px 20px 0px black;
+  align-items: center;
+  border-radius: 5px;
+  margin: 15px 15px;
+ 
+}
+/*seccion 3*/
+.proyectos-caja{
+  background-color: var(--Color-negro);
+  height: auto;
+}
+.titulo-Proyecto{
+  text-align: center;
+  color:  var(--color-morado);
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 29px 0;
+  background-color: var(--Color-negro);
+  
+  
+}
+/*proyectos tarjetas*/
+
+.contenedor-proyectos{
+  
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: 45px;
+
+}
+.bottom a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 5px 18px;
+  background-color: var(--color-morado);
+  border-radius: 5px;
+  color: white;
+}
+.bottom{
+  text-align: center;
+}
+
+.wrapper {
+  width:255px;
+      height: 480px;
+   background-color: rgb(255, 255, 255);
+      text-align: left;
+      position: relative;
+      transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+      
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: rgb(31 31 31 / 12%) 0px 1px 6px, rgb(31 31 31 / 12%) 0px 1px 4px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 20px 18px;
+      box-shadow: black 0px 0px 20px 5px;
+  }
+  .wrapper:hover{
+      transform: scale(0.9);
+  }
+  
+  .head {
+      width: 100%;
+      height: 168px;
+      background-image: url("../Img/uni.png");
+      background-size: 50%;
+      background-color: rgb(130, 168, 225);
+     background-repeat: no-repeat;
+      background-position: center center;
+  }
+  .head1 {
+    width: 100%;
+    height: 168px;
+    background-image: url("../Img/calculadora.png");
+    background-size: 50%;
+    background-color: rgb(130, 168, 225);
+   background-repeat: no-repeat;
+    background-position: center center;
+}
+.head2 {
+  width: 100%;
+  height: 168px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/261/261946.png);
+  background-size: 50%;
+  background-color: rgb(130, 168, 225);
+ background-repeat: no-repeat;
+  background-position: center center;
+}
+.head3 {
+  width: 100%;
+  height: 168px;
+  background-image: url(https://cdn-icons-png.flaticon.com/512/261/261946.png);
+  background-size: 50%;
+  background-color: rgb(130, 168, 225);
+ background-repeat: no-repeat;
+  background-position: center center;
+}
+  
+  .blue {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 132px;
+      background-image: linear-gradient(135deg, rgb(2, 64, 87), rgb(2, 64, 87));
+      transform: skewY(-10deg);
+  }
+  
+  .logo2 {
+    position:absolute;
+    top: 120px;
+    left:25px;
+    width: 52px;
+    height: 52px;
+    background-origin: content-box;
+    padding: 10px;
+    border: 1px solid rgb(225, 225, 225);
+      border-radius: 3px;
+      z-index: 1;
+      background-color: rgb(255, 255, 255);
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+  }
+  
+  .content {
+    position:absolute;
+    top: 190px;
+    left:25px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .content h3 {
+    margin:0px;
+    font-size: 1.25rem;
+  font-weight: normal;
+    line-height: 1.5rem;
+  }
+  
+  .content p {
+    font-size: 0.875rem;
+  font-weight: normal;
+    line-height: 1.5rem;
+  }
+  
+  .bottom {
+    width: 100%;
+      position: absolute;
+      bottom: 4px;
+      padding: 0.75rem 1.5rem;
+        color: rgb(245, 247, 250);
+    font-size: 0.75rem;
+      line-height: 1.125rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-family: OpenSans-Bold, OpenSans, Arial, sans-serif;
+  }
+  .vermas-proyectos{
+    background-color: blue;
+    font-size: 1.8rem;
+    box-shadow: black 0px 0px 20px 1px;
+    background-color: var(--color-morado);
+    width: 55%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+   text-align: center;
+  }
+  .vermas-proyectos a{
+    text-decoration: none;
+    color: white;
+    margin-top: 40px;
+    
+  }
+  /*contactos*/
+ .contactos-caja{
+ 
+ }    
+.contact_form{	
+	width: 100%; 
+  height: 100%;
+  box-shadow: black 0px 0px 20px 1px;
+  border-radius: 2px;
+	
+	padding-top: 10px;
+	padding-bottom: 10px;  
+  background-color: var(--Color-negro); 
+  padding-left: 30px; 
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+
+input{
+	background-color: #fbfbfb; 
+	width: 100%; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color:var(--color-morado); 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  font-size: 15px;
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+	width: 100%; 
+	height: 150px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: var(--color-morado); 
+	margin-top: 10px;  
+	padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+  font-size: 15px;
+}
+
+
+label{
+  display: block; 
+	float: center; 	
+}
+
+
+button{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color:  var(--color-morado); 
+	border-color: var(--color-morado); 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 100%; 
+  cursor: pointer;
+}
+button:hover{
+    background-color:  rgb(196, 151, 241); 
+}
+
+
+button p{
+	color: #fff; 
+}
+
+
+span{
+	color: var(--color-morado); 
+}
+
+
+.aviso{
+	font-size: 13px;  
+	color: #0e0e0e;  
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+.formulario h1{
+	text-align: center;
+  color:  var(--color-morado);
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding: 29px 0;
+  background-color: var(--Color-negro);
+}
+
+
+.formulario h3{
+	font-size: 1rem; 
+	padding-bottom: 20px;
+	color: white;   
+}
+
+
+.formulario p{
+	font-size: 1rem; 
+	color: white;  
+    font-weight: bold;
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 1px solid #97d848;
+}
+.contactos-caja {
+    margin-bottom: 105px;
+}
+/*footeer*/
+
+.spacer {
+  height: 535px;
+  
+  
+}
+
+/* Colors and font sizes can be changed, everything else is required for a responsive footer. Links can be added and removed. The spacer above is not needed, it is just simulating space where content would normally go. */
+
+.footer {
+    width: 100%;
+    background-color: var(--Color-negro);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    width: 80%;
+    max-width: 1280px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+   
+}
+
+.footer-icon {
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    
+    
+}
+.footer-icon img{
+width: 100px;
+height: 100px; 
+
+}
+
+.footer-text {
+    margin: 0px 15px;
+    cursor: default;
+    user-select: none;
+}
+
+.footer-item {
+    color: white;
+    text-decoration: none;
+    margin: 5px 0px;
+    padding: 5px 10px 5px 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 20px 0px;
+    border-left: solid white 1px;
+    padding: 0px 35px;
+}
+
+.footer-item:hover {
+    background: rgb(18, 29, 56);
+}
+
+@media (max-width: 770px) {
+    .footer-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .links {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-right: solid white 1px;
+    }
+    .footer-icon{
+      width: 50px;
+      height: 50px;
+    }
+    .footer-icon img{
+      width: 100%;
+      height: 100%;
+      }
+
+}
+/*responsive mayor a 768 asta 1200*/
+@media only screen and (min-width: 770px) and (max-width: 1130px){
+  /*menu*/
+  /*.opcion:hover{
+    background-color: rgb(119, 9, 230);
+  }*/
+  .menu-acoplado{
+    background-color: var(--Color-negro);
+    
+   
+  }
+  .menu-acoplado img{
+    width: 85px;
+    height: 85px;
+    margin-left: 25px;
+  }
+  /*portada*/
+  .portada{
+    position: relative;
+    
+    background-color: var(--Color-negro);
+    background-size: 100%;
+    height: 100vh;
+   
+   
+    
+  }
+  .contenido_portada{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(../Img/portadaoficial.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: grayscale(10%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+  .contenido_portada h1{
+    font-size: 3rem;
+    margin: 15px;
+  }
+  .contenido_portada h2{
+    font-size: 2rem;
+    margin: 5px;
+  }
+  .contenido_portada a{
+    font-size: 1.5rem;
+    margin: 15px;
+    padding: 10px;
+    width: 350px;
+    background-color: rgb(130, 70, 189);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  /*seccion1*/
+  .contenedor-quiensoy{
+   
+  }
+  .quiensoy-caja{
+   
+    height: auto;
+  }
+  .img-quiensoy{
+    border-radius: 50%;
+  }
+  .img-quiensoy img{
+    border-radius: 50%;
+  }
+  .descripcion{
+   padding-bottom: 50px;
+   width: 95%;
+   margin: auto;
+  }
+
+  /*seccion2*/
+  .conocimientos-caja{
+    
+    height: 100vh;
+  } .contenedor-Conocimientos img{
+    transform:  scale(0.8);
+    transition: all 0.5s;
+  }
+  .contenedor-Conocimientos img:hover{
+    transform:  scale(1);
+  }
+  /*proyectos*/
+  
+  .wrapper{
+    width: 290px;
+  }
+  /*seccion 4 contactos*/
+  .contactos-caja{
+    width: 80%;
+    margin: auto;
+  }
+  
+}
+
+/*parapantalla mayores a 1000*/
+@media only screen and (min-width: 1130px) {
+  
+  /*menu*/
+  .navegacion{
+   
+    transform: translate(0,0);
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  .logo-letra{
+    font-size: 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-right: 25%;
+  width: 280px;
+  text-align: center;
+  }
+  
+  .menu-acoplado{
+    display: none;
+    
+  }
+  .cerrar{
+    display: none;
+  }
+ 
+  .navegacion ul li{
+    display: flex;
+    height:auto;
+    
+    width: 140px;
+    height: 100%;
+    border-radius: 8px;
+    margin: 0 15px;
+    align-items: center;
+    text-align: center;
+    padding: 9px;
+  }
+  .navegacion ul li a{
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .navegacion ul :hover{
+background-color: rgb(148, 110, 185);
+  }
+  
+  /*portada*/
+  .portada{
+    height: 100vh;
+  }
+  .contenido_portada h1{
+    font-size: 3rem;
+    margin: 15px;
+  }
+  .contenido_portada h2{
+    font-size: 2rem;
+    margin: 5px;
+  }
+  .contenido_portada a{
+    font-size: 1.5rem;
+    margin: 15px;
+    padding: 10px;
+    width: 350px;
+    background-color: rgb(130, 70, 189);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+  .contenido_portada a:hover{
+    background-color:  rgb(148, 110, 185);
+  }
+  /*seccion 1*/
+  .quiensoy-caja{
+height: 100vh;
+  }
+  .contenedor-quiensoy{
+    display: flex;
+    justify-content: center;
+    margin: 0 80px;
+    
+  }
+  
+.img-quiensoy{
+ 
+   width: auto;
+   height: auto;
+ 
+  margin-left:  80px; 
+}
+.img-quiensoy img{
+ transform: scale(0.8);
+ width: 350px;
+ transition: all 0.5s;
+ filter: grayscale(10%);
+}
+.img-quiensoy img:hover{
+  transform: scale(1);
+}
+.descripcion{
+ 
+  margin: 0 20px;
+  color: white;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  font-size: 1.4rem;
+  margin: 129px;
+  text-align: center;
+}
+.descripcion p{
+  margin-top: 0;
+  text-align: center;
+  
+  word-spacing: 0.6em;
+  
+}
+
+/*conocimientos*/
+.conocimientos-caja{
+  height: 100vh;
+}
+.contenedor-Conocimientos{
+  width: 80%;
+  margin: auto;
+}
+.contenedor-Conocimientos img{
+  width: 150px;
+    height: 150px;
+    align-items: center;
+    margin: 0px 52px; 
+    transform:  scale(0.8);
+    transition:  all 0.5s;
+}
+.contenedor-Conocimientos img:hover{
+  transform:  scale(1);
+}
+
+/*proyecto*/
+.vermas-proyectos{
+  width: 20%;
+  font-size: 1.3rem;
+}
+/*contactos*/
+.contactos-caja{
+  width: 45%;
+  margin: auto;
+}
+}
+
+
